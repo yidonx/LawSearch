@@ -62,21 +62,21 @@
         "resources": [
             {
                 "name": "联合国宪章 (UN Charter)",
-                "url": "https://www.un.org/zh/about-us/un-charter",
+                "url": "https://www.un.org/about-us/un-charter",
                 "type": "基础性文件",
                 "desc": "联合国的建立条约和核心文件。"
             },
             {
-                "name": "UN Treaty Collection",
-                "url": "https://treaties.un.org/",
-                "type": "条约数据",
-                "desc": "联合国条约汇编，包含国际条约及多边协定。"
+                "name": "国际法院（ICJ）",
+                "url": "https://www.icj-cij.org/",
+                "type": "最高法院",
+                "desc": "专门裁决国家之间领土或条约纠纷的联合国最高法律机构。"
             },
             {
-                "name": "International Court of Justice",
-                "url": "https://www.icj-cij.org/",
-                "type": "司法判例",
-                "desc": "联合国国际法院案件与判决数据。"
+                "name": "国际刑事法院 (ICC)",
+                "url": "https://www.icc-cpi.int/",
+                "type": "最高法院",
+                "desc": "专门追究和审判个人所犯下的战争罪或种族屠杀等严重罪行的独立法庭。"
             }
         ]
     },
