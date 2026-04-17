@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 触发条件：当推送到 main 分支时
+  push:
+    branches:
+      - main
+  # 允许手动触发部署
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以便允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 允许并发部署，但如果在进行中的部署，取消进行中的排队运行，允许最新一次运行
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 上传当前目录下的所有文件 (index.html, data.json, logo.svg)
+          path: '.'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
