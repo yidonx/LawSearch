@@ -1,0 +1,32 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background (Paper) -->
+    <rect width="256" height="256" fill="#F4F3F0" />
+    
+    <!-- Outer Ring (Atlas/Globe) - Ink -->
+    <circle cx="128" cy="128" r="116" fill="#F4F3F0" stroke="#1A1C20" stroke-width="12"/>
+    <circle cx="128" cy="128" r="98" stroke="#1A1C20" stroke-width="2" stroke-dasharray="8 8"/>
+    
+    <!-- Globe Grid (Atlas) - Ink -->
+    <ellipse cx="128" cy="128" rx="52" ry="116" stroke="#1A1C20" stroke-width="6"/>
+    <line x1="12" y1="128" x2="244" y2="128" stroke="#1A1C20" stroke-width="6"/>
+    
+    <!-- Central Pillar (Lex/Justice) - Crimson Accent -->
+    <path d="M120 56 H136 V184 H120 Z" fill="#8B1E0F"/>
+    <path d="M104 184 H152 V196 H104 Z" fill="#8B1E0F"/>
+    <path d="M112 44 H144 V56 H112 Z" fill="#8B1E0F"/>
+    
+    <!-- Balance Beam - Crimson -->
+    <path d="M56 76 H200 V88 H56 Z" fill="#8B1E0F"/>
+    
+    <!-- Left Tray Strings - Crimson -->
+    <line x1="64" y1="88" x2="40" y2="144" stroke="#8B1E0F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="64" y1="88" x2="88" y2="144" stroke="#8B1E0F" stroke-width="4" stroke-linecap="round"/>
+    <!-- Left Tray Base - Crimson -->
+    <path d="M32 144 H96 Q64 168 32 144 Z" fill="#8B1E0F"/>
+    
+    <!-- Right Tray Strings - Crimson -->
+    <line x1="192" y1="88" x2="168" y2="144" stroke="#8B1E0F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="192" y1="88" x2="216" y2="144" stroke="#8B1E0F" stroke-width="4" stroke-linecap="round"/>
+    <!-- Right Tray Base - Crimson -->
+    <path d="M160 144 H224 Q192 168 160 144 Z" fill="#8B1E0F"/>
+</svg>

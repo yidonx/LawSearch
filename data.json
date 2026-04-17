@@ -1,0 +1,3862 @@
+[
+    {
+        "id": "WTO",
+        "name": "世界贸易组织 (WTO)",
+        "flag": "🌐",
+        "regionId": "organizations",
+        "regionName": "跨国组织",
+        "subregionId": "global",
+        "subregionName": "全球性组织",
+        "status": "已完成",
+        "rank": 0,
+        "resources": [
+            {
+                "name": "WTO Documents Online",
+                "url": "https://docs.wto.org/",
+                "type": "法律文件",
+                "desc": "世贸组织官方文件及法律文本。"
+            },
+            {
+                "name": "Dispute Settlement",
+                "url": "https://www.wto.org/english/tratop_e/dispu_e/dispu_e.htm",
+                "type": "争端解决",
+                "desc": "世贸组织争端解决机制判例与报告。"
+            }
+        ]
+    },
+    {
+        "id": "EU",
+        "name": "欧盟 (European Union)",
+        "flag": "🇪🇺",
+        "regionId": "organizations",
+        "regionName": "跨国组织",
+        "subregionId": "regional",
+        "subregionName": "区域性组织",
+        "status": "已完成",
+        "rank": 0,
+        "resources": [
+            {
+                "name": "EUR-Lex",
+                "url": "https://eur-lex.europa.eu/",
+                "type": "综合数据",
+                "desc": "免费获取欧盟法律文件的官方门户。"
+            },
+            {
+                "name": "CURIA",
+                "url": "https://curia.europa.eu/",
+                "type": "司法判例",
+                "desc": "欧洲联盟法院的判例法与文件。"
+            }
+        ]
+    },
+    {
+        "id": "UN",
+        "name": "联合国 (United Nations)",
+        "flag": "🇺🇳",
+        "regionId": "organizations",
+        "regionName": "跨国组织",
+        "subregionId": "global",
+        "subregionName": "全球性组织",
+        "status": "已完成",
+        "rank": 0,
+        "resources": [
+            {
+                "name": "联合国宪章 (UN Charter)",
+                "url": "https://www.un.org/zh/about-us/un-charter",
+                "type": "基础性文件",
+                "desc": "联合国的建立条约和核心文件。"
+            },
+            {
+                "name": "UN Treaty Collection",
+                "url": "https://treaties.un.org/",
+                "type": "条约数据",
+                "desc": "联合国条约汇编，包含国际条约及多边协定。"
+            },
+            {
+                "name": "International Court of Justice",
+                "url": "https://www.icj-cij.org/",
+                "type": "司法判例",
+                "desc": "联合国国际法院案件与判决数据。"
+            }
+        ]
+    },
+    {
+        "id": "US",
+        "name": "美国 (United States)",
+        "flag": "🇺🇸",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "north-america",
+        "subregionName": "北美洲",
+        "status": "已完成",
+        "rank": 1,
+        "resources": [
+            {
+                "name": "Supreme Court Database",
+                "url": "http://scdb.wustl.edu/",
+                "type": "司法判例",
+                "desc": "美国最高法院的全面案例数据与统计信息。"
+            },
+            {
+                "name": "Congress.gov",
+                "url": "https://www.congress.gov/",
+                "type": "立法法规",
+                "desc": "美国国会官方网站，提供联邦立法数据。"
+            },
+            {
+                "name": "PACER",
+                "url": "https://pacer.uscourts.gov/",
+                "type": "诉讼档案",
+                "desc": "美国联邦法院电子记录公共访问系统。"
+            }
+        ]
+    },
+    {
+        "id": "CN",
+        "name": "China (China)",
+        "flag": "🇨🇳",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "已完成",
+        "rank": 2,
+        "resources": [
+            {
+                "name": "中国裁判文书网",
+                "url": "https://wenshu.court.gov.cn/",
+                "type": "司法判例",
+                "desc": "中国最高人民法院设立的全国法院裁判文书公开平台。"
+            },
+            {
+                "name": "国家法律法规数据库",
+                "url": "https://flk.npc.gov.cn/",
+                "type": "立法法规",
+                "desc": "全国人大常委会办公厅维护的权威法律法规数据。"
+            },
+            {
+                "name": "北大法宝 (Pkulaw)",
+                "url": "https://www.pkulaw.com/",
+                "type": "综合数据",
+                "desc": "中国广泛使用的综合性法律数据库。"
+            }
+        ]
+    },
+    {
+        "id": "DE",
+        "name": "德国 (Germany)",
+        "flag": "🇩🇪",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 3,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "JP",
+        "name": "日本 (Japan)",
+        "flag": "🇯🇵",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "已完成",
+        "rank": 4,
+        "resources": [
+            {
+                "name": "e-Gov法令検索",
+                "url": "https://elaws.e-gov.go.jp/",
+                "type": "立法法规",
+                "desc": "日本政府官方电子法律法规检索系统。"
+            },
+            {
+                "name": "裁判所 Courts in Japan",
+                "url": "https://www.courts.go.jp/",
+                "type": "司法判例",
+                "desc": "日本最高裁判所判例搜索系统。"
+            }
+        ]
+    },
+    {
+        "id": "IN",
+        "name": "印度 (India)",
+        "flag": "🇮🇳",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 5,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GB",
+        "name": "英国 (United Kingdom)",
+        "flag": "🇬🇧",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "已完成",
+        "rank": 6,
+        "resources": [
+            {
+                "name": "legislation.gov.uk",
+                "url": "https://www.legislation.gov.uk/",
+                "type": "立法法规",
+                "desc": "英国国家档案馆维护的完整立法数据库。"
+            },
+            {
+                "name": "BAILII",
+                "url": "https://www.bailii.org/",
+                "type": "司法判例",
+                "desc": "英国及爱尔兰法律信息研究所。"
+            }
+        ]
+    },
+    {
+        "id": "FR",
+        "name": "法国 (France)",
+        "flag": "🇫🇷",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 7,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "IT",
+        "name": "意大利 (Italy)",
+        "flag": "🇮🇹",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 8,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BR",
+        "name": "巴西 (Brazil)",
+        "flag": "🇧🇷",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 9,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CA",
+        "name": "加拿大 (Canada)",
+        "flag": "🇨🇦",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "north-america",
+        "subregionName": "北美洲",
+        "status": "进行中",
+        "rank": 10,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "RU",
+        "name": "俄罗斯 (Russia)",
+        "flag": "🇷🇺",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 11,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MX",
+        "name": "墨西哥 (Mexico)",
+        "flag": "🇲🇽",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "north-america",
+        "subregionName": "北美洲",
+        "status": "进行中",
+        "rank": 12,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AU",
+        "name": "澳大利亚 (Australia)",
+        "flag": "🇦🇺",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "australia-and-new-zealand",
+        "subregionName": "澳新地区",
+        "status": "进行中",
+        "rank": 13,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KR",
+        "name": "韩国 (South Korea)",
+        "flag": "🇰🇷",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "进行中",
+        "rank": 14,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ES",
+        "name": "西班牙 (Spain)",
+        "flag": "🇪🇸",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 15,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ID",
+        "name": "印度尼西亚 (Indonesia)",
+        "flag": "🇮🇩",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 16,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NL",
+        "name": "荷兰 (Netherlands)",
+        "flag": "🇳🇱",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 17,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TR",
+        "name": "土耳其 (Turkey)",
+        "flag": "🇹🇷",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 18,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SA",
+        "name": "沙特阿拉伯 (Saudi Arabia)",
+        "flag": "🇸🇦",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 19,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CH",
+        "name": "瑞士 (Switzerland)",
+        "flag": "🇨🇭",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 20,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BT",
+        "name": "不丹 (Bhutan)",
+        "flag": "🇧🇹",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TL",
+        "name": "东帝汶 (Timor-Leste)",
+        "flag": "🇹🇱",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TW",
+        "name": "中国台湾 (Taiwan)",
+        "flag": "🇹🇼",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MO",
+        "name": "中国澳门 (Macau)",
+        "flag": "🇲🇴",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "HK",
+        "name": "中国香港 (Hong Kong)",
+        "flag": "🇭🇰",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CF",
+        "name": "中非共和国 (Central African Republic)",
+        "flag": "🇨🇫",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "DK",
+        "name": "丹麦 (Denmark)",
+        "flag": "🇩🇰",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "UA",
+        "name": "乌克兰 (Ukraine)",
+        "flag": "🇺🇦",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "UZ",
+        "name": "乌兹别克斯坦 (Uzbekistan)",
+        "flag": "🇺🇿",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "central-asia",
+        "subregionName": "中亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "UG",
+        "name": "乌干达 (Uganda)",
+        "flag": "🇺🇬",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "UY",
+        "name": "乌拉圭 (Uruguay)",
+        "flag": "🇺🇾",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TD",
+        "name": "乍得 (Chad)",
+        "flag": "🇹🇩",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "YE",
+        "name": "也门 (Yemen)",
+        "flag": "🇾🇪",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AM",
+        "name": "亚美尼亚 (Armenia)",
+        "flag": "🇦🇲",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "IL",
+        "name": "以色列 (Israel)",
+        "flag": "🇮🇱",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "IQ",
+        "name": "伊拉克 (Iraq)",
+        "flag": "🇮🇶",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "IR",
+        "name": "伊朗 (Iran)",
+        "flag": "🇮🇷",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BZ",
+        "name": "伯利兹 (Belize)",
+        "flag": "🇧🇿",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "central-america",
+        "subregionName": "中美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CV",
+        "name": "佛得角 (Cape Verde)",
+        "flag": "🇨🇻",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BG",
+        "name": "保加利亚 (Bulgaria)",
+        "flag": "🇧🇬",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "HR",
+        "name": "克罗地亚 (Croatia)",
+        "flag": "🇭🇷",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GM",
+        "name": "冈比亚 (Gambia)",
+        "flag": "🇬🇲",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "IS",
+        "name": "冰岛 (Iceland)",
+        "flag": "🇮🇸",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GN",
+        "name": "几内亚 (Guinea)",
+        "flag": "🇬🇳",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LI",
+        "name": "列支敦士登 (Liechtenstein)",
+        "flag": "🇱🇮",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CG",
+        "name": "刚果 (Republic of the Congo)",
+        "flag": "🇨🇬",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LY",
+        "name": "利比亚 (Libya)",
+        "flag": "🇱🇾",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "northern-africa",
+        "subregionName": "北非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LR",
+        "name": "利比里亚 (Liberia)",
+        "flag": "🇱🇷",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GH",
+        "name": "加纳 (Ghana)",
+        "flag": "🇬🇭",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GA",
+        "name": "加蓬 (Gabon)",
+        "flag": "🇬🇦",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "HU",
+        "name": "匈牙利 (Hungary)",
+        "flag": "🇭🇺",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "central-europe",
+        "subregionName": "中欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MK",
+        "name": "北馬其頓 (North Macedonia)",
+        "flag": "🇲🇰",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SS",
+        "name": "南苏丹 (South Sudan)",
+        "flag": "🇸🇸",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ZA",
+        "name": "南非 (South Africa)",
+        "flag": "🇿🇦",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "southern-africa",
+        "subregionName": "南部非洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BW",
+        "name": "博茨瓦纳 (Botswana)",
+        "flag": "🇧🇼",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "southern-africa",
+        "subregionName": "南部非洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "QA",
+        "name": "卡塔尔 (Qatar)",
+        "flag": "🇶🇦",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "RW",
+        "name": "卢旺达 (Rwanda)",
+        "flag": "🇷🇼",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LU",
+        "name": "卢森堡 (Luxembourg)",
+        "flag": "🇱🇺",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GT",
+        "name": "危地马拉 (Guatemala)",
+        "flag": "🇬🇹",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "central-america",
+        "subregionName": "中美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "EC",
+        "name": "厄瓜多尔 (Ecuador)",
+        "flag": "🇪🇨",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ER",
+        "name": "厄立特里亚 (Eritrea)",
+        "flag": "🇪🇷",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SY",
+        "name": "叙利亚 (Syria)",
+        "flag": "🇸🇾",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CU",
+        "name": "古巴 (Cuba)",
+        "flag": "🇨🇺",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KG",
+        "name": "吉尔吉斯斯坦 (Kyrgyzstan)",
+        "flag": "🇰🇬",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "central-asia",
+        "subregionName": "中亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "DJ",
+        "name": "吉布提 (Djibouti)",
+        "flag": "🇩🇯",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KZ",
+        "name": "哈萨克斯坦 (Kazakhstan)",
+        "flag": "🇰🇿",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "central-asia",
+        "subregionName": "中亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CO",
+        "name": "哥伦比亚 (Colombia)",
+        "flag": "🇨🇴",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CR",
+        "name": "哥斯达黎加 (Costa Rica)",
+        "flag": "🇨🇷",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "central-america",
+        "subregionName": "中美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CM",
+        "name": "喀麦隆 (Cameroon)",
+        "flag": "🇨🇲",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TV",
+        "name": "图瓦卢 (Tuvalu)",
+        "flag": "🇹🇻",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "polynesia",
+        "subregionName": "波利尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TM",
+        "name": "土库曼斯坦 (Turkmenistan)",
+        "flag": "🇹🇲",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "central-asia",
+        "subregionName": "中亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LC",
+        "name": "圣卢西亚 (Saint Lucia)",
+        "flag": "🇱🇨",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KN",
+        "name": "圣基茨和尼维斯 (Saint Kitts and Nevis)",
+        "flag": "🇰🇳",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ST",
+        "name": "圣多美和普林西比 (São Tomé and Príncipe)",
+        "flag": "🇸🇹",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "VC",
+        "name": "圣文森特和格林纳丁斯 (Saint Vincent and the Grenadines)",
+        "flag": "🇻🇨",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SM",
+        "name": "圣马力诺 (San Marino)",
+        "flag": "🇸🇲",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GY",
+        "name": "圭亚那 (Guyana)",
+        "flag": "🇬🇾",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TZ",
+        "name": "坦桑尼亚 (Tanzania)",
+        "flag": "🇹🇿",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "EG",
+        "name": "埃及 (Egypt)",
+        "flag": "🇪🇬",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "northern-africa",
+        "subregionName": "北非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ET",
+        "name": "埃塞俄比亚 (Ethiopia)",
+        "flag": "🇪🇹",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KI",
+        "name": "基里巴斯 (Kiribati)",
+        "flag": "🇰🇮",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "micronesia",
+        "subregionName": "密克罗尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TJ",
+        "name": "塔吉克斯坦 (Tajikistan)",
+        "flag": "🇹🇯",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "central-asia",
+        "subregionName": "中亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SN",
+        "name": "塞内加尔 (Senegal)",
+        "flag": "🇸🇳",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "RS",
+        "name": "塞尔维亚 (Serbia)",
+        "flag": "🇷🇸",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SL",
+        "name": "塞拉利昂 (Sierra Leone)",
+        "flag": "🇸🇱",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CY",
+        "name": "塞浦路斯 (Cyprus)",
+        "flag": "🇨🇾",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SC",
+        "name": "塞舌尔 (Seychelles)",
+        "flag": "🇸🇨",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TG",
+        "name": "多哥 (Togo)",
+        "flag": "🇹🇬",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "DO",
+        "name": "多明尼加 (Dominican Republic)",
+        "flag": "🇩🇴",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "DM",
+        "name": "多米尼加 (Dominica)",
+        "flag": "🇩🇲",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AT",
+        "name": "奥地利 (Austria)",
+        "flag": "🇦🇹",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "central-europe",
+        "subregionName": "中欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "VE",
+        "name": "委内瑞拉 (Venezuela)",
+        "flag": "🇻🇪",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BD",
+        "name": "孟加拉国 (Bangladesh)",
+        "flag": "🇧🇩",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AO",
+        "name": "安哥拉 (Angola)",
+        "flag": "🇦🇴",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AG",
+        "name": "安提瓜和巴布达 (Antigua and Barbuda)",
+        "flag": "🇦🇬",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AD",
+        "name": "安道尔 (Andorra)",
+        "flag": "🇦🇩",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "FM",
+        "name": "密克罗尼西亚 (Micronesia)",
+        "flag": "🇫🇲",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "micronesia",
+        "subregionName": "密克罗尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NI",
+        "name": "尼加拉瓜 (Nicaragua)",
+        "flag": "🇳🇮",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "central-america",
+        "subregionName": "中美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NG",
+        "name": "尼日利亚 (Nigeria)",
+        "flag": "🇳🇬",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NE",
+        "name": "尼日尔 (Niger)",
+        "flag": "🇳🇪",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NP",
+        "name": "尼泊尔 (Nepal)",
+        "flag": "🇳🇵",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PS",
+        "name": "巴勒斯坦 (Palestine)",
+        "flag": "🇵🇸",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BS",
+        "name": "巴哈马 (Bahamas)",
+        "flag": "🇧🇸",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PK",
+        "name": "巴基斯坦 (Pakistan)",
+        "flag": "🇵🇰",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BB",
+        "name": "巴巴多斯 (Barbados)",
+        "flag": "🇧🇧",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PG",
+        "name": "巴布亚新几内亚 (Papua New Guinea)",
+        "flag": "🇵🇬",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "melanesia",
+        "subregionName": "美拉尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PY",
+        "name": "巴拉圭 (Paraguay)",
+        "flag": "🇵🇾",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PA",
+        "name": "巴拿马 (Panama)",
+        "flag": "🇵🇦",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "central-america",
+        "subregionName": "中美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BH",
+        "name": "巴林 (Bahrain)",
+        "flag": "🇧🇭",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BF",
+        "name": "布基纳法索 (Burkina Faso)",
+        "flag": "🇧🇫",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BI",
+        "name": "布隆迪 (Burundi)",
+        "flag": "🇧🇮",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GR",
+        "name": "希腊 (Greece)",
+        "flag": "🇬🇷",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PW",
+        "name": "帕劳 (Palau)",
+        "flag": "🇵🇼",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "micronesia",
+        "subregionName": "密克罗尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SB",
+        "name": "所罗门群岛 (Solomon Islands)",
+        "flag": "🇸🇧",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "melanesia",
+        "subregionName": "美拉尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LV",
+        "name": "拉脱维亚 (Latvia)",
+        "flag": "🇱🇻",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NO",
+        "name": "挪威 (Norway)",
+        "flag": "🇳🇴",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CZ",
+        "name": "捷克 (Czechia)",
+        "flag": "🇨🇿",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "central-europe",
+        "subregionName": "中欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MD",
+        "name": "摩尔多瓦 (Moldova)",
+        "flag": "🇲🇩",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MA",
+        "name": "摩洛哥 (Morocco)",
+        "flag": "🇲🇦",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "northern-africa",
+        "subregionName": "北非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MC",
+        "name": "摩纳哥 (Monaco)",
+        "flag": "🇲🇨",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BN",
+        "name": "文莱 (Brunei)",
+        "flag": "🇧🇳",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "FJ",
+        "name": "斐济 (Fiji)",
+        "flag": "🇫🇯",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "melanesia",
+        "subregionName": "美拉尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SZ",
+        "name": "斯威士兰 (Eswatini)",
+        "flag": "🇸🇿",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "southern-africa",
+        "subregionName": "南部非洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SK",
+        "name": "斯洛伐克 (Slovakia)",
+        "flag": "🇸🇰",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "central-europe",
+        "subregionName": "中欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SI",
+        "name": "斯洛文尼亚 (Slovenia)",
+        "flag": "🇸🇮",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "central-europe",
+        "subregionName": "中欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LK",
+        "name": "斯里兰卡 (Sri Lanka)",
+        "flag": "🇱🇰",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SG",
+        "name": "新加坡 (Singapore)",
+        "flag": "🇸🇬",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NZ",
+        "name": "新西兰 (New Zealand)",
+        "flag": "🇳🇿",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "australia-and-new-zealand",
+        "subregionName": "澳新地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CL",
+        "name": "智利 (Chile)",
+        "flag": "🇨🇱",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KP",
+        "name": "朝鲜 (North Korea)",
+        "flag": "🇰🇵",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KH",
+        "name": "柬埔寨 (Cambodia)",
+        "flag": "🇰🇭",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GD",
+        "name": "格林纳达 (Grenada)",
+        "flag": "🇬🇩",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GE",
+        "name": "格鲁吉亚 (Georgia)",
+        "flag": "🇬🇪",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "VA",
+        "name": "梵蒂冈 (Vatican City)",
+        "flag": "🇻🇦",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BE",
+        "name": "比利时 (Belgium)",
+        "flag": "🇧🇪",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "western-europe",
+        "subregionName": "西欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MR",
+        "name": "毛里塔尼亚 (Mauritania)",
+        "flag": "🇲🇷",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MU",
+        "name": "毛里求斯 (Mauritius)",
+        "flag": "🇲🇺",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CD",
+        "name": "民主刚果 (DR Congo)",
+        "flag": "🇨🇩",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TO",
+        "name": "汤加 (Tonga)",
+        "flag": "🇹🇴",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "polynesia",
+        "subregionName": "波利尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PL",
+        "name": "波兰 (Poland)",
+        "flag": "🇵🇱",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "central-europe",
+        "subregionName": "中欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BA",
+        "name": "波斯尼亚和黑塞哥维那 (Bosnia and Herzegovina)",
+        "flag": "🇧🇦",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TH",
+        "name": "泰国 (Thailand)",
+        "flag": "🇹🇭",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ZW",
+        "name": "津巴布韦 (Zimbabwe)",
+        "flag": "🇿🇼",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "southern-africa",
+        "subregionName": "南部非洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "HN",
+        "name": "洪都拉斯 (Honduras)",
+        "flag": "🇭🇳",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "central-america",
+        "subregionName": "中美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "HT",
+        "name": "海地 (Haiti)",
+        "flag": "🇭🇹",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "IE",
+        "name": "爱尔兰 (Ireland)",
+        "flag": "🇮🇪",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "EE",
+        "name": "爱沙尼亚 (Estonia)",
+        "flag": "🇪🇪",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "JM",
+        "name": "牙买加 (Jamaica)",
+        "flag": "🇯🇲",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TT",
+        "name": "特立尼达和多巴哥 (Trinidad and Tobago)",
+        "flag": "🇹🇹",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "caribbean",
+        "subregionName": "加勒比地区",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BO",
+        "name": "玻利维亚 (Bolivia)",
+        "flag": "🇧🇴",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NR",
+        "name": "瑙鲁 (Nauru)",
+        "flag": "🇳🇷",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "micronesia",
+        "subregionName": "密克罗尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SE",
+        "name": "瑞典 (Sweden)",
+        "flag": "🇸🇪",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "VU",
+        "name": "瓦努阿图 (Vanuatu)",
+        "flag": "🇻🇺",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "melanesia",
+        "subregionName": "美拉尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BY",
+        "name": "白俄罗斯 (Belarus)",
+        "flag": "🇧🇾",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KW",
+        "name": "科威特 (Kuwait)",
+        "flag": "🇰🇼",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KM",
+        "name": "科摩罗 (Comoros)",
+        "flag": "🇰🇲",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "CI",
+        "name": "科特迪瓦 (Ivory Coast)",
+        "flag": "🇨🇮",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PE",
+        "name": "秘鲁 (Peru)",
+        "flag": "🇵🇪",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "TN",
+        "name": "突尼斯 (Tunisia)",
+        "flag": "🇹🇳",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "northern-africa",
+        "subregionName": "北非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LT",
+        "name": "立陶宛 (Lithuania)",
+        "flag": "🇱🇹",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SO",
+        "name": "索马里 (Somalia)",
+        "flag": "🇸🇴",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "JO",
+        "name": "约旦 (Jordan)",
+        "flag": "🇯🇴",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "NA",
+        "name": "纳米比亚 (Namibia)",
+        "flag": "🇳🇦",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "southern-africa",
+        "subregionName": "南部非洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MM",
+        "name": "缅甸 (Myanmar)",
+        "flag": "🇲🇲",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "RO",
+        "name": "罗马尼亚 (Romania)",
+        "flag": "🇷🇴",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LA",
+        "name": "老挝 (Laos)",
+        "flag": "🇱🇦",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "KE",
+        "name": "肯尼亚 (Kenya)",
+        "flag": "🇰🇪",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "FI",
+        "name": "芬兰 (Finland)",
+        "flag": "🇫🇮",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "northern-europe",
+        "subregionName": "北欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SD",
+        "name": "苏丹 (Sudan)",
+        "flag": "🇸🇩",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "northern-africa",
+        "subregionName": "北非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SR",
+        "name": "苏里南 (Suriname)",
+        "flag": "🇸🇷",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MZ",
+        "name": "莫桑比克 (Mozambique)",
+        "flag": "🇲🇿",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LS",
+        "name": "莱索托 (Lesotho)",
+        "flag": "🇱🇸",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "southern-africa",
+        "subregionName": "南部非洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PH",
+        "name": "菲律宾 (Philippines)",
+        "flag": "🇵🇭",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "SV",
+        "name": "萨尔瓦多 (El Salvador)",
+        "flag": "🇸🇻",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "central-america",
+        "subregionName": "中美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "WS",
+        "name": "萨摩亚 (Samoa)",
+        "flag": "🇼🇸",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "polynesia",
+        "subregionName": "波利尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "PT",
+        "name": "葡萄牙 (Portugal)",
+        "flag": "🇵🇹",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MN",
+        "name": "蒙古 (Mongolia)",
+        "flag": "🇲🇳",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "eastern-asia",
+        "subregionName": "东亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "BJ",
+        "name": "贝宁 (Benin)",
+        "flag": "🇧🇯",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ZM",
+        "name": "赞比亚 (Zambia)",
+        "flag": "🇿🇲",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "GQ",
+        "name": "赤道几内亚 (Equatorial Guinea)",
+        "flag": "🇬🇶",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "middle-africa",
+        "subregionName": "中非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "VN",
+        "name": "越南 (Vietnam)",
+        "flag": "🇻🇳",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AZ",
+        "name": "阿塞拜疆 (Azerbaijan)",
+        "flag": "🇦🇿",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AF",
+        "name": "阿富汗 (Afghanistan)",
+        "flag": "🇦🇫",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "DZ",
+        "name": "阿尔及利亚 (Algeria)",
+        "flag": "🇩🇿",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "northern-africa",
+        "subregionName": "北非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AL",
+        "name": "阿尔巴尼亚 (Albania)",
+        "flag": "🇦🇱",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AE",
+        "name": "阿拉伯联合酋长国 (United Arab Emirates)",
+        "flag": "🇦🇪",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "OM",
+        "name": "阿曼 (Oman)",
+        "flag": "🇴🇲",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "AR",
+        "name": "阿根廷 (Argentina)",
+        "flag": "🇦🇷",
+        "regionId": "americas",
+        "regionName": "美洲",
+        "subregionId": "south-america",
+        "subregionName": "南美洲",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MV",
+        "name": "马尔代夫 (Maldives)",
+        "flag": "🇲🇻",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "southern-asia",
+        "subregionName": "南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MW",
+        "name": "马拉维 (Malawi)",
+        "flag": "🇲🇼",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MY",
+        "name": "马来西亚 (Malaysia)",
+        "flag": "🇲🇾",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "south-eastern-asia",
+        "subregionName": "东南亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MH",
+        "name": "马绍尔群岛 (Marshall Islands)",
+        "flag": "🇲🇭",
+        "regionId": "oceania",
+        "regionName": "大洋洲",
+        "subregionId": "micronesia",
+        "subregionName": "密克罗尼西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MT",
+        "name": "马耳他 (Malta)",
+        "flag": "🇲🇹",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "southern-europe",
+        "subregionName": "南欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "MG",
+        "name": "马达加斯加 (Madagascar)",
+        "flag": "🇲🇬",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "eastern-africa",
+        "subregionName": "东非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ML",
+        "name": "马里 (Mali)",
+        "flag": "🇲🇱",
+        "regionId": "africa",
+        "regionName": "非洲",
+        "subregionId": "western-africa",
+        "subregionName": "西非",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "LB",
+        "name": "黎巴嫩 (Lebanon)",
+        "flag": "🇱🇧",
+        "regionId": "asia",
+        "regionName": "亚洲",
+        "subregionId": "western-asia",
+        "subregionName": "西亚",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    },
+    {
+        "id": "ME",
+        "name": "黑山 (Montenegro)",
+        "flag": "🇲🇪",
+        "regionId": "europe",
+        "regionName": "欧洲",
+        "subregionId": "eastern-europe",
+        "subregionName": "东欧",
+        "status": "进行中",
+        "rank": 100,
+        "resources": [
+            {
+                "name": "资源名称（待补充）",
+                "url": "",
+                "type": "类型（待补充）",
+                "desc": "描述（待补充）"
+            }
+        ]
+    }
+]

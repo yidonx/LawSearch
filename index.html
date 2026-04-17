@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexAtlas | 全球法律数据资源库</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Vue 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Outfit"', 'sans-serif'],
+                    },
+                    colors: {
+                        paper: {
+                            DEFAULT: '#F4F3F0',
+                            dark: '#E8E6E1',
+                        },
+                        ink: {
+                            DEFAULT: '#1A1C20',
+                            light: '#4A4D55',
+                        },
+                        crimson: {
+                            DEFAULT: '#8B1E0F',
+                            hover: '#66150A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: theme('colors.paper.DEFAULT');
+            color: theme('colors.ink.DEFAULT');
+            overflow-y: scroll;
+        }
+
+        /* 隐藏滚动条但保持可滚动 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: theme('colors.paper.dark');
+            border-radius: 4px;
+        }
+
+        /* 链接悬停动画 (质感下划线) */
+        .resource-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .resource-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: theme('colors.crimson.DEFAULT');
+            transform-origin: bottom right;
+            transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        
+        .resource-link:hover {
+            color: theme('colors.crimson.DEFAULT');
+        }
+        
+        .resource-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* 卡片边框样式 - 打造档案/账本感 */
+        .ledger-border {
+            border-top: 1px solid theme('colors.paper.dark');
+            border-bottom: 1px solid theme('colors.paper.dark');
+        }
+
+        /* 渐入动画 */
+        .fade-enter-active,
+        .fade-leave-active {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .fade-enter-from,
+        .fade-leave-to {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-crimson selection:text-white min-h-screen flex flex-col">
+
+    <div id="app" class="flex-grow flex flex-col md:flex-row max-w-[1600px] mx-auto w-full" v-cloak>
+        
+        <!-- 左侧导航与搜索 (固定在桌面端) -->
+        <aside class="w-full md:w-80 lg:w-96 flex-shrink-0 border-b md:border-b-0 md:border-r border-paper-dark p-8 md:p-12 md:sticky md:top-0 md:h-screen overflow-y-auto flex flex-col justify-between">
+            
+            <div>
+                <!-- Logo / 标题 -->
+                <div class="mb-12">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="logo.svg" alt="LexAtlas Logo" class="w-14 h-14 md:w-16 md:h-16 rounded-full drop-shadow-sm border border-ink/10">
+                        <h1 class="font-serif text-5xl md:text-6xl italic tracking-tight text-ink">LexAtlas</h1>
+                    </div>
+                    <p class="font-sans text-sm tracking-wider uppercase text-ink-light font-medium border-l-2 border-crimson pl-3">
+                        全球法律数据资源目录<br>
+                        <span class="text-xs opacity-70 normal-case tracking-normal mt-1 block" v-if="!isLoading">当前收录 {{ countriesData.length }} 个国家、地区及跨国组织</span>
+                    </p>
+                </div>
+
+                <!-- 视图切换 (地区 / 热度) -->
+                <div class="flex items-center gap-1 mb-8 bg-paper-dark p-1 rounded-lg w-fit border border-ink/5">
+                    <button 
+                        @click="viewMode = 'region'"
+                        :class="['px-4 py-1.5 rounded-md text-sm font-sans transition-all', viewMode === 'region' ? 'bg-white text-ink shadow-sm' : 'text-ink-light hover:text-ink']"
+                    >
+                        <i class="ph ph-globe-hemisphere-east mr-1"></i>按地区
+                    </button>
+                    <button 
+                        @click="viewMode = 'heat'"
+                        :class="['px-4 py-1.5 rounded-md text-sm font-sans transition-all', viewMode === 'heat' ? 'bg-white text-ink shadow-sm' : 'text-ink-light hover:text-ink']"
+                    >
+                        <i class="ph ph-fire mr-1"></i>按热度
+                    </button>
+                </div>
+
+                <!-- 搜索框 -->
+                <div class="relative mb-12 group">
+                    <i class="ph ph-magnifying-glass absolute left-0 top-1/2 -translate-y-1/2 text-ink-light text-xl group-focus-within:text-crimson transition-colors"></i>
+                    <input 
+                        v-model="searchQuery" 
+                        type="text" 
+                        placeholder="搜索国家、地区或资源名称..." 
+                        class="w-full bg-transparent border-b border-paper-dark py-3 pl-8 pr-4 font-sans text-ink placeholder-ink-light/50 focus:outline-none focus:border-crimson transition-colors"
+                    >
+                </div>
+
+                <!-- 地区导航 (侧边栏锚点) -->
+                <nav v-if="viewMode === 'region'" class="hidden md:block">
+                    <h3 class="font-serif text-xl mb-6 italic text-ink-light">导航</h3>
+                    <ul class="space-y-5 font-sans text-sm font-medium">
+                        <li v-for="region in regionTree" :key="region.id">
+                            <a :href="'#' + region.id" 
+                               class="text-ink hover:text-crimson transition-colors font-bold text-base mb-2 block">
+                                {{ region.name }}
+                            </a>
+                            <!-- 二级地区 -->
+                            <ul class="space-y-2.5 pl-3 border-l-2 border-paper-dark mt-2">
+                                <li v-for="sub in region.subregions" :key="sub.id">
+                                    <a :href="'#' + sub.id" class="text-ink-light hover:text-crimson transition-colors block group">
+                                        <span>{{ sub.name }}</span>
+                                        <span class="text-[10px] ml-2 opacity-50 group-hover:opacity-100 transition-opacity bg-paper-dark px-1.5 rounded">{{ sub.countries.length }}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 热度说明 -->
+                <nav v-if="viewMode === 'heat'" class="hidden md:block">
+                    <h3 class="font-serif text-xl mb-4 italic text-ink-light">全球热度排名</h3>
+                    <p class="font-sans text-sm text-ink-light leading-relaxed">
+                        数据已根据国家综合实力（GDP Top 20）与法律检索热度进行排序。<br><br>排名靠前的核心司法管辖区将优先展示，方便快速获取重要判例与法规。
+                    </p>
+                </nav>
+            </div>
+
+            <!-- 底部信息 -->
+            <div class="mt-12 pt-8 border-t border-paper-dark text-xs font-sans text-ink-light leading-relaxed">
+                <p>该列表为精选法律研究、数据分析和司法参考提供核心框架。</p>
+            </div>
+        </aside>
+
+        <!-- 右侧主要内容区 -->
+        <main class="flex-grow p-8 md:p-12 lg:p-20 overflow-hidden">
+            
+            <!-- 加载状态 -->
+            <div v-if="isLoading" class="h-full flex flex-col items-center justify-center text-center py-20">
+                <i class="ph ph-spinner animate-spin text-4xl text-crimson mb-4"></i>
+                <p class="font-sans text-sm text-ink-light">正在加载全球数据...</p>
+            </div>
+
+            <!-- 空状态 -->
+            <div v-else-if="filteredCountries.length === 0" class="h-full flex flex-col items-center justify-center text-center py-20 opacity-50">
+                <i class="ph ph-magnifying-glass-minus text-6xl mb-4"></i>
+                <h2 class="font-serif text-2xl italic">未找到匹配的辖区或资源</h2>
+                <p class="font-sans text-sm mt-2">请尝试使用其他关键词搜索</p>
+            </div>
+
+            <!-- ==============================
+                 按地区视图 (Region View) 
+            =============================== -->
+            <template v-if="viewMode === 'region'">
+                <div 
+                    v-for="region in regionTree" 
+                    :key="region.id" 
+                    :id="region.id"
+                    class="mb-24 last:mb-0 scroll-mt-12"
+                >
+                    <!-- 地区标题 (一级) -->
+                    <div class="flex items-end justify-between mb-12 border-b-2 border-ink pb-4">
+                        <h2 class="font-serif text-4xl text-ink">{{ region.name }}</h2>
+                    </div>
+
+                    <!-- 次区域遍历 (二级) -->
+                    <div 
+                        v-for="sub in region.subregions" 
+                        :key="sub.id" 
+                        :id="sub.id"
+                        class="mb-16 last:mb-0 scroll-mt-12"
+                    >
+                        <h3 class="font-serif text-2xl text-ink-light mb-8 italic border-l-4 border-crimson pl-4">{{ sub.name }}</h3>
+
+                        <!-- 国家/地区网格 -->
+                        <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-12 gap-y-10">
+                            <div 
+                                v-for="country in sub.countries" 
+                                :key="country.id"
+                                class="group flex flex-col"
+                            >
+                                <!-- 国家名称头 -->
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span class="text-2xl" aria-hidden="true">{{ country.flag }}</span>
+                                    <h4 class="font-sans text-xl font-semibold text-ink">{{ country.name }}</h4>
+                                    <!-- 编辑状态标签 (替代简称) -->
+                                    <span :class="['font-sans text-[11px] px-2 py-0.5 rounded-sm font-medium tracking-wider ml-auto', country.status === '已完成' ? 'bg-ink text-paper' : 'border border-ink/20 text-ink-light bg-paper-dark']">
+                                        {{ country.status }}
+                                    </span>
+                                </div>
+
+                                <!-- 资源列表 -->
+                                <ul class="flex-grow flex flex-col space-y-0 border-t border-paper-dark">
+                                    <li 
+                                        v-for="(resource, idx) in country.resources" 
+                                        :key="idx"
+                                        class="border-b border-paper-dark border-dashed py-3 flex items-start gap-3 group/item hover:bg-white/40 transition-colors px-2 -mx-2 rounded-sm"
+                                    >
+                                        <div class="mt-1 flex-shrink-0 w-20">
+                                            <span class="block w-full text-[10px] font-semibold text-crimson opacity-80 border border-crimson/20 px-1.5 py-0.5 rounded-sm truncate">
+                                                {{ resource.type || '类型（待补充）' }}
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow min-w-0">
+                                            <div class="flex items-start justify-between gap-3">
+                                                <template v-if="isValidUrl(resource.url)">
+                                                    <a :href="resource.url" target="_blank" rel="noopener noreferrer" class="resource-link font-sans text-[15px] font-medium leading-snug break-words">
+                                                        {{ resource.name || '资源名称（待补充）' }}
+                                                        <i class="ph-bold ph-arrow-up-right ml-1 text-xs opacity-50"></i>
+                                                    </a>
+                                                </template>
+                                                <template v-else>
+                                                    <span class="font-sans text-[15px] font-medium leading-snug break-words text-ink-light">
+                                                        {{ resource.name || '资源名称（待补充）' }}
+                                                    </span>
+                                                </template>
+                                            </div>
+
+                                            <div class="mt-1 text-[11px] font-sans text-ink-light/80">
+                                                <span class="font-semibold tracking-widest mr-2">URL</span>
+                                                <template v-if="isValidUrl(resource.url)">
+                                                    <a :href="resource.url" target="_blank" rel="noopener noreferrer" class="font-mono break-all hover:text-crimson transition-colors">
+                                                        {{ resource.url }}
+                                                    </a>
+                                                </template>
+                                                <template v-else>
+                                                    <span class="font-mono">URL（待补充）</span>
+                                                </template>
+                                            </div>
+
+                                            <p class="text-xs text-ink-light mt-1.5 leading-relaxed pr-4">
+                                                {{ resource.desc || '描述（待补充）' }}
+                                            </p>
+                                        </div>
+                                    </li>
+                                    
+                                    <li v-if="!country.resources || country.resources.length === 0" class="py-4 text-sm text-ink-light italic font-serif">
+                                        暂无收录资源，待补充。
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <!-- ==============================
+                 按热度视图 (Heat/Rank View) 
+            =============================== -->
+            <template v-if="viewMode === 'heat'">
+                <div class="mb-12 border-b-2 border-ink pb-4">
+                    <h2 class="font-serif text-4xl text-ink">全球热点排行</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-12 gap-y-10">
+                    <div 
+                        v-for="(country, index) in heatCountries" 
+                        :key="country.id"
+                        class="group flex flex-col"
+                    >
+                        <div class="flex items-center gap-3 mb-4">
+                            <!-- 排名 -->
+                            <span class="font-serif text-3xl text-crimson italic opacity-80 w-10 shrink-0">#{{ index + 1 }}</span>
+                            <span class="text-2xl" aria-hidden="true">{{ country.flag }}</span>
+                            <h4 class="font-sans text-xl font-semibold text-ink">{{ country.name }}</h4>
+                            <span :class="['font-sans text-[11px] px-2 py-0.5 rounded-sm font-medium tracking-wider ml-auto', country.status === '已完成' ? 'bg-ink text-paper' : 'border border-ink/20 text-ink-light bg-paper-dark']">
+                                {{ country.status }}
+                            </span>
+                        </div>
+
+                        <!-- 资源列表 -->
+                        <ul class="flex-grow flex flex-col space-y-0 border-t border-paper-dark">
+                            <li 
+                                v-for="(resource, idx) in country.resources" 
+                                :key="idx"
+                                class="border-b border-paper-dark border-dashed py-3 flex items-start gap-3 group/item hover:bg-white/40 transition-colors px-2 -mx-2 rounded-sm"
+                            >
+                                <div class="mt-1 flex-shrink-0 w-20">
+                                    <span class="block w-full text-[10px] font-semibold text-crimson opacity-80 border border-crimson/20 px-1.5 py-0.5 rounded-sm truncate">
+                                        {{ resource.type || '类型（待补充）' }}
+                                    </span>
+                                </div>
+                                <div class="flex-grow min-w-0">
+                                    <div class="flex items-start justify-between gap-3">
+                                        <template v-if="isValidUrl(resource.url)">
+                                            <a :href="resource.url" target="_blank" rel="noopener noreferrer" class="resource-link font-sans text-[15px] font-medium leading-snug break-words">
+                                                {{ resource.name || '资源名称（待补充）' }}
+                                                <i class="ph-bold ph-arrow-up-right ml-1 text-xs opacity-50"></i>
+                                            </a>
+                                        </template>
+                                        <template v-else>
+                                            <span class="font-sans text-[15px] font-medium leading-snug break-words text-ink-light">
+                                                {{ resource.name || '资源名称（待补充）' }}
+                                            </span>
+                                        </template>
+                                    </div>
+
+                                    <div class="mt-1 text-[11px] font-sans text-ink-light/80">
+                                        <span class="font-semibold tracking-widest mr-2">URL</span>
+                                        <template v-if="isValidUrl(resource.url)">
+                                            <a :href="resource.url" target="_blank" rel="noopener noreferrer" class="font-mono break-all hover:text-crimson transition-colors">
+                                                {{ resource.url }}
+                                            </a>
+                                        </template>
+                                        <template v-else>
+                                            <span class="font-mono">URL（待补充）</span>
+                                        </template>
+                                    </div>
+
+                                    <p class="text-xs text-ink-light mt-1.5 leading-relaxed pr-4">
+                                        {{ resource.desc || '描述（待补充）' }}
+                                    </p>
+                                </div>
+                            </li>
+                            <li v-if="!country.resources || country.resources.length === 0" class="py-4 text-sm text-ink-light italic font-serif">
+                                暂无收录资源，待补充。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </template>
+
+        </main>
+    </div>
+
+    <!-- 应用程序逻辑与数据 -->
+    <script>
+        const { createApp, ref, computed, onMounted } = Vue;
+
+        createApp({
+            setup() {
+                const searchQuery = ref("");
+                const viewMode = ref("region"); // 'region' 或 'heat'
+                const countriesData = ref([]);
+                const isLoading = ref(true);
+
+                // Fetch data from data.json
+                onMounted(async () => {
+                    try {
+                        const response = await fetch("data.json?" + new Date().getTime()); // 防止缓存
+                        if (!response.ok) throw new Error("Network response was not ok");
+                        const data = await response.json();
+                        countriesData.value = data;
+                    } catch (error) {
+                        console.error("Failed to load data:", error);
+                    } finally {
+                        isLoading.value = false;
+                    }
+                });
+
+                // 根据搜索关键词过滤数据
+                const filteredCountries = computed(() => {
+                    const query = searchQuery.value.toLowerCase().trim();
+                    if (!query) return countriesData.value;
+
+                    return countriesData.value.filter(country => {
+                        const matchCountry = country.name.toLowerCase().includes(query) || 
+                                           (country.regionName && country.regionName.toLowerCase().includes(query)) ||
+                                           (country.subregionName && country.subregionName.toLowerCase().includes(query));
+                        
+                        const matchResources = country.resources.some(res => 
+                            res.name.toLowerCase().includes(query) || 
+                            (res.type && res.type.toLowerCase().includes(query)) ||
+                            (res.desc && res.desc.toLowerCase().includes(query))
+                        );
+
+                        return matchCountry || matchResources;
+                    });
+                });
+
+                const heatCountries = computed(() => {
+                    return filteredCountries.value.filter(c => c.regionId !== "organizations");
+                });
+
+                const isValidUrl = (url) => {
+                    if (!url || typeof url !== "string") return false;
+                    const trimmed = url.trim();
+                    return /^https?:\/\//i.test(trimmed);
+                };
+
+                const totalCountries = computed(() => countriesData.value.length);
+
+                // 将过滤后的扁平数据转换为 地区 -> 次区域 的树形结构
+                const regionTree = computed(() => {
+                    const tree = [];
+                    filteredCountries.value.forEach(country => {
+                        let region = tree.find(r => r.id === country.regionId);
+                        if (!region) {
+                            region = { 
+                                id: country.regionId, 
+                                name: country.regionName, 
+                                subregions: [] 
+                            };
+                            tree.push(region);
+                        }
+                        
+                        let subregion = region.subregions.find(s => s.id === country.subregionId);
+                        if (!subregion) {
+                            subregion = { 
+                                id: country.subregionId, 
+                                name: country.subregionName, 
+                                countries: [] 
+                            };
+                            region.subregions.push(subregion);
+                        }
+                        
+                        subregion.countries.push(country);
+                    });
+                    
+                    // 跨国组织放最后，大洲按指定顺序排序
+                    const regionOrder = ["asia", "europe", "africa", "americas", "oceania", "organizations"];
+                    tree.sort((a, b) => {
+                        const ia = regionOrder.indexOf(a.id);
+                        const ib = regionOrder.indexOf(b.id);
+                        const na = ia === -1 ? regionOrder.length : ia;
+                        const nb = ib === -1 ? regionOrder.length : ib;
+                        return na - nb;
+                    });
+                    
+                    // 次区域内部排序，如果是欧洲，按指定顺序排序
+                    tree.forEach(region => {
+                        if (region.id === "europe") {
+                            const order = ["北欧", "西欧", "中欧", "南欧", "东欧"];
+                            region.subregions.sort((a, b) => {
+                                const ia = order.indexOf(a.name);
+                                const ib = order.indexOf(b.name);
+                                const na = ia === -1 ? order.length : ia;
+                                const nb = ib === -1 ? order.length : ib;
+                                return na - nb;
+                            });
+                        } else {
+                            region.subregions.sort((a, b) => {
+                                if (!a.name || !b.name) return 0;
+                                return a.name.localeCompare(b.name, 'zh-Hans-CN');
+                            });
+                        }
+                    });
+                    
+                    return tree;
+                });
+
+                return {
+                    searchQuery,
+                    viewMode,
+                    filteredCountries,
+                    heatCountries,
+                    regionTree,
+                    isLoading,
+                    totalCountries,
+                    isValidUrl,
+                    countriesData
+                };
+            }
+        }).mount("#app");
+    </script>
+</body>
+</html>
