@@ -1,14 +1,14 @@
-# LexAtlas
+# LawLink
 
 <div align="center">
-  <img src="logo.svg" alt="LexAtlas Logo" width="120" />
+  <img src="logo.svg" alt="LawLink Logo" width="120" />
   <h3>全球法律数据资源库</h3>
   <p>一个精选的全球法律研究、数据分析和司法参考资源目录，覆盖 190+ 国家与地区。</p>
 </div>
 
 ## 🌟 项目简介
 
-**LexAtlas** 旨在为法律从业者、研究人员和数据分析师提供一个系统化、结构化且极具美感的全球法律数据资源导航平台。
+**LawLink** 旨在为法律从业者、研究人员和数据分析师提供一个系统化、结构化且极具美感的全球法律数据资源导航平台。
 
 项目采用纯净的前端架构，所有资源数据通过结构化的 JSON 驱动，界面采用“电子档案库（Digital Ledger）”的美学设计，兼顾了专业感与现代排版的优雅。
 
